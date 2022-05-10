@@ -26,7 +26,7 @@ def secondDegreePolynomial():
 def exponential():
     # Exponential variables
     y = random.randInt(range[0], range[1])
-    a = (y2/y1)**(x2-x1)
+    a = (y2/y1)**(1/(x2-x1))
     x = range[1]
     b = y/(a**x)
 
