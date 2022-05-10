@@ -1,6 +1,5 @@
 import math
 import random
-from tkinter import Y
 
 # Range area
 range = (0,100)
@@ -8,8 +7,8 @@ range = (0,100)
 def linear():
     # Linear variables
     y = random.randInt(range[0], range[1])
-    a = (y2-y1)/(x2-x1)
     x = range[1]
+    a = (y2-y1)/(x2-x1)
     b = y-(a*x)
 
     formula = a*x+b
@@ -17,8 +16,8 @@ def linear():
 def secondDegreePolynomial():
     # Second degree polynomial variables
     y = random.randInt(range[0], range[1])
+    x = range[1]
     a = 123
-    x = 123
     b = 123
     c = 123
 
@@ -27,9 +26,9 @@ def secondDegreePolynomial():
 def exponential():
     # Exponential variables
     y = random.randInt(range[0], range[1])
-    a = 123
-    x = 123
-    b = 123
+    a = (y2/y1)**(x2-x1)
+    x = range[1]
+    b = y/(a**x)
 
     formula = b*(a**x)
 
@@ -61,11 +60,6 @@ p2 = (x2, y2)
 # Store results
 resultList = []
 
-
-
 for i in range(100):
     if(123 == 1):
         123
-
-
-
